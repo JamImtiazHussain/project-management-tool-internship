@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "id": "1784909299331",
+      "username": "jam",
+      "password": "jam123"
+    },
+    {
+      "id": "1784909655711",
+      "username": "imtiaz",
+      "password": "imtiaz123"
+    },
+    {
+      "id": "1784909752619",
+      "username": "hussain",
+      "password": "huss123"
+    }
+  ],
+  "projects": [
+    {
+      "id": "1784909316514",
+      "title": "AI-project"
+    },
+    {
+      "id": "1784909343094",
+      "title": "Chatbot"
+    },
+    {
+      "id": "1784909764058",
+      "title": "netguard-ai"
+    }
+  ],
+  "tasks": [],
+  "comments": []
+}

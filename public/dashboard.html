@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - Project Management Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Collaborative Dashboard</h1>
+        <div>
+            <span id="logged-user"></span>
+            <button id="logout-btn">Logout</button>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        <aside>
+            <h3>Projects</h3>
+            <form id="create-project-form">
+                <input type="text" id="project-title" placeholder="Project Name" required>
+                <button type="submit">Add Project</button>
+            </form>
+            <ul id="project-list"></ul>
+        </aside>
+
+        <main id="project-workspace" style="display: none;">
+            <h2 id="current-project-title"></h2>
+            
+            <div class="task-section">
+                <h3>Add Task</h3>
+                <form id="create-task-form">
+                    <input type="text" id="task-title" placeholder="Task description" required>
+                    <input type="text" id="task-assignee" placeholder="Assign to (Username)">
+                    <button type="submit">Create Task</button>
+                </form>
+            </div>
+
+            <div class="boards-container">
+                <div class="board-column">
+                    <h4>To Do</h4>
+                    <div id="tasks-todo" class="task-list"></div>
+                </div>
+                <div class="board-column">
+                    <h4>In Progress</h4>
+                    <div id="tasks-inprogress" class="task-list"></div>
+                </div>
+                <div class="board-column">
+                    <h4>Done</h4>
+                    <div id="tasks-done" class="task-list"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
